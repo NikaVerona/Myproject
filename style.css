@@ -1,0 +1,25 @@
+.landing-button {
+    width: fit-content;
+    padding: 15px 55px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+/*--- Specialists ---*/
+.specialist-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*--- Services ---*/
+.services-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    gap: 50px;
+}
