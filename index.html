@@ -5,32 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
+
+<script src="https://kit.fontawesome.com/8213cf86b1.js" crossorigin="anonymous"></script>
+
     <title>Project-1</title>
 </head>
 <body>
-   <div class="landing-content">
-    <div class="container landing-flex-container">
-        <h2 class="landing-heading"> Our company produces highest quality products</h2>
-        <p class="landing-description"> Don't take our word for it - check it out</p>
-        <button class="landing-button">Our offer</button>
+    <header class="header">
+        <div class="header-content container">
+        <div class="branding">
+            <img class="logo" src="https://picsum.photos/200" alt="logo">
+            <h1>OUR COMPANY</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">About us</li>
+                <li class="nav-item disabled-nav-item">Contact</li>
+            </ul>
+        </nav>
     </div>
-   </div> 
-<section class="section-container">
-    <h2 class="section-heading"> Our specialists</h2>
-    <ul class="specialists"></ul>
-</section>
-<section class="section blue-section">
-<div class="container">
-    <h2 class="section-heading white-headind"> What our company does?</h2>
-    <div class="services-grid">
-        <div class="service-item">Service 1</div>
-        <div class="service-item">Service 2</div>
-        <div class="service-item">Service 3</div>
-        <div class="service-item">Service 4</div>
-        <div class="service-item">Service 5</div>
-        <div class="service-item">Service 6</div>
+    </header>
+    <main>
+        <article>
+            <section class="landing-section">
+                <img src="landing-image.jpg" alt="Landing image of our website" class="landing image">
+                <div class="landing-content">
+                    <div class="container landing-flex-container">
+                        <h2 class="landing-heading"> Our company produces highest quality coffee</h2>
+                        <p class="landing-description"> Don't take our word for it - check it out</p>
+                        <button class="landing-button">Our offer</button>
+                    </div>
+                    </div>
+            </section>
+            <section class="section container">
+                <h2 class="section-heading"> Our specialists</h2>
+                <ul class="specialist-list">
+                    <li class="specialist-list-item">
+                        <img class="specialist-image" src="specialist-1.jpg" alt="Specialist Una">
+                        <div class="specialist-details">
+                            <h3 class="specialist-name">Una [ barista ]</h3>
+                            <p class="specialist-description">I reflect on my time as a barista with so much fondness. At the time, I definitely took it for granted and stressed way too much about the little things. My best recommendation is to HAVE FUN.</p>
+                        </div>
+                    </li>
+                    <li class="specialist-list-item reversed-specialist-list-item">
+                        <img class="specialist-image" src="specialist-2.jpg" alt="Specialist Una">
+                        <div class="specialist-details">
+                            <h3 class="specialist-name specialist-name-reversed">Peter [ barista ]</h3>
+                            <p class="specialist-description specialist-description-reversed">First of all, I LOVE coffee. I know waaaaay too much about it to not work with it, but I have just made the final transition out of it. I spent about 8 years trying to make it my career and only found stress and a paycheck-to-paycheck lifestyle.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+                <section class="section brown-section">
+                    <div class="container">
+                    <h2 class="section-heading white-heading">What our company does?</h2>
+                    <div class="services-grid">
+                        <div class="service-item service-item-new">Service 1 
+                            <p class="service-item-special-text">( new! )</p>
+                            <span class="new-service-dot"></span>
+                        </div>
+                        <div class="service-item">Service 2</div>
+                        <div class="service-item">Service 3</div>
+                        <div class="service-item">Service 4</div>
+                        <div class="service-item">Service 5</div>
+                        <div class="service-item">Service 6</div>
+                    </div>
+                </div>
+                </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+        <p class="footer-info">Coffeestore. All rights reserved, 2024</p>
+        <div class="footer-icons">
+            <i class="footer-icon fa-brands fa-instagram"></i>
+            <i class="footer-icon fa-brands fa-square-facebook"></i>
+        </div>
     </div>
-</div>
-</section>
+    </footer>
 </body>
 </html>

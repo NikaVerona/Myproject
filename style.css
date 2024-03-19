@@ -1,3 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-heading {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.brown-section {
+    background-color: rgb(22, 2, 2);
+}
+
+.white-heading {
+    color: white;
+}
+
+/*----HEADER----*/
+.header {
+    padding: 10px;
+    background-color: bisque;
+
+    -webkit-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+    box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+    box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.disabled-nav-item {
+    color: darkgray;
+    cursor: not-allowed;
+}
+
+/*---LANDING---*/
+.landing-section {
+position: relative;
+}
+
+.landing-image {
+    width: 100%;
+    height: calc(100vh - 70px);
+    filter: brightness(70%);
+}
+
+.landing-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.landing-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.landing-heading {
+    font-size: 36px;
+    font-weight: 700;
+    width: 550px;
+}
+
+.landing-description {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .landing-button {
     width: fit-content;
     padding: 15px 55px;
@@ -9,17 +126,121 @@
     cursor: pointer;
 }
 
-/*--- Specialists ---*/
-.specialist-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
 
-/*--- Services ---*/
+/*---SERVICES---*/
 .services-grid {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     justify-content: center;
     gap: 50px;
+}
+
+.service-item {
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 1px solid darkgrey;
+    display: flex;
+    justify-content: center;
+}
+
+.service-item-new {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.new-service-dot {
+position: absolute;
+top: 0;
+left: 0;
+transform: translate(-50%, -50%);
+width: 22px;
+height: 22px;
+background-color: orange;
+border-radius: 50%;
+}
+
+.service-item-special-text {
+    font-size: 14px;
+}
+
+
+/*--- Specialists ---*/
+.specialist-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.specialist-list-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.reversed-specialist-list-item {
+    flex-direction: row-reverse;
+}
+
+.specialist-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.specialist-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.specialist-name {
+    font-weight: 700;
+}
+
+.specialist-name-reversed {
+    text-align: right;
+}
+
+.specialist-description-reversed {
+    text-align: right;
+}
+
+
+/*--- Services ---*/
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    gap: 50px;
+}
+
+/*---Footer---*/
+
+.footer {
+    background-color: rgb(59, 38, 11);
+    padding: 25px 0;
+}
+
+.footer-content {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icon {
+   font-size: 30px;
 }
