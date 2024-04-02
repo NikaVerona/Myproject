@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -20,7 +24,7 @@ body {
 
 .section-heading {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 700px;
   margin-bottom: 30px;
 }
 
@@ -55,7 +59,7 @@ body {
   align-items: center;
   gap: 10px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 .logo {
@@ -74,8 +78,12 @@ body {
 
 .nav-item {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400px;
   cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
 }
 
 .disabled-nav-item {
@@ -112,29 +120,31 @@ body {
 
 .landing-heading {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 400px;
   width: 550px;
 }
 
 .landing-description {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 400px;
 }
 
-.landing-button {
+.button {
   width: fit-content;
   padding: 15px 55px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 400px;
   color: white;
   background-color: transparent;
   border: 4px solid white;
   cursor: pointer;
-  transition: background-color 1s ease;
+  transition: background-color 1s ease, color 0.3s;
+  text-decoration: none;
 }
 
-.landing-button:hover {
+.button:hover {
   background-color: #fff;
+  color: black;
 }
 
 .text {
@@ -227,24 +237,17 @@ body {
 }
 
 .specialist-name {
-  font-weight: 700;
+  font-weight: 700px;
 }
 
-.specialist-name:nth-of-type(even) {
+.specialist-list-item:nth-of-type(even) .specialist-details .specialist-name {
   text-align: right;
 }
 
-.specialist-description:nth-of-type(even) {
+.specialist-list-item:nth-of-type(even)
+  .specialist-details
+  .specialist-description {
   text-align: right;
-}
-
-/*--- Services ---*/
-
-.services-grid {
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  justify-content: center;
-  gap: 50px;
 }
 
 /*---Footer---*/
